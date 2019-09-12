@@ -1,0 +1,16 @@
+<!-- WAP to display the text displayed on the button -->
+<!DOCTYPE html>
+<html>
+   <body>
+		<script>
+			function display(id) 
+			{
+			var text = document.getElementById(id).innerHTML;
+			alert("text displayed on button : "+text);
+			}
+		</script>
+		<button type="submit" id="1" name="first" value="one" onclick="display(this.id)">hello</button><br/>
+		<button type="reset" id="2" name="second" value="two"  onclick="display(this.id)">world</button><br/>
+		<button type="button" id="3" name="third" value="three"  onclick="display(this.id)">javascript</button>
+   </body>
+</html>

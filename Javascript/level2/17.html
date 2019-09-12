@@ -1,0 +1,31 @@
+<!-- WAP to display all options from dropdown list -->
+<!DOCTYPE html>
+<html>
+   <body>
+		
+		<script>
+			function display()
+			{
+				  var x = document.getElementById("1");
+				  var items = "";
+				  var i;
+				  for (i = 0; i < x.length; i++)
+				  {
+					items = items + " " + x.options[i].text;
+				  }
+				  document.getElementById("2").innerHTML = items;
+			}			
+		</script>
+		
+		<select id="1">
+			<option>one</option>
+			<option>two</option>
+			<option>three</option>	
+			<option>four</option>
+			<option>five</option>
+			<option>six</option>
+		</select>	
+			<input type="button" value="display" onclick="display()">
+			<p id='2'></p>
+   </body>
+</html>

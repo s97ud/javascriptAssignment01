@@ -1,0 +1,30 @@
+<!-- WAP to display the value of each element in form. -->
+<!DOCTYPE html>
+<html>
+   <body>
+		
+		<script>
+		
+		
+			function display()
+			{
+				  var x = document.getElementById('1');
+				  var text = "";
+				  var i;
+				  for (i = 0; i < x.length ;i++) {
+					text += x.elements[i].value + "<br\>";
+				  }
+				  document.getElementById('2').innerHTML = text;
+			}
+		
+		</script>
+		<form id="1" method="get">
+			name : <input type="text" name="name" value="sam"><br/>
+			email : <input type="text" name="email" value="sam@gmail.com"><br/>
+			address : <input type="text" name="address" value="bangalore"><br/>
+			<input type="submit" value="submit">
+		</form>
+		<button onclick="display()">value of element</button>
+		<p id="2"></p>
+   </body>
+</html>

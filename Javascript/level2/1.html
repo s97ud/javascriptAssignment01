@@ -1,0 +1,15 @@
+<!-- WAP ​ to create a welcome cookie. -->
+<!DOCTYPE html>
+<html>
+	<body></body>
+	<script>
+	function CookieSet (cName, cValue)
+	{
+		cvalue = encodeURIComponent(cValue);
+		document.cookie = cName + "=" + cValue;
+	}
+	CookieSet("name","welcome");
+	alert(document.cookie)
+	</script>
+	</body>
+</html>

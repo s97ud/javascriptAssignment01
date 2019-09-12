@@ -1,0 +1,20 @@
+<!-- WAP to submit a form automatically after 2 seconds. -->
+<!DOCTYPE html>
+<html>
+   <body>
+		<script>
+			setTimeout(sub,2000);
+			function sub()
+			{
+				document.getElementById('1').submit();
+			}
+		
+		</script>
+		<form id="1" method="get">
+			name : <input type="text" name="name"><br/>
+			email : <input type="text" name="email"><br/>
+			address : <input type="text" name="address"><br/>
+			<input type="button" onclick="sub()" value="submit">
+		</form>
+   </body>
+</html>

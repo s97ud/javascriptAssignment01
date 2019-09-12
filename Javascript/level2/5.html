@@ -1,0 +1,15 @@
+<!--    WAP to disable a button on button click. -->
+<!DOCTYPE html>
+<html>
+   <body>
+      <script>
+		function msg()
+			{
+				document.getElementById('1').disabled = true;
+			}
+      </script>
+	  <button type="submit" id="1" name="first" value="one" onclick="display(this.id)">hello</button><br/>
+		<button type="reset" id="2" name="second" value="two"  onclick="display(this.id)">world</button><br/>
+	  <button type="button" id="4" value="Surprise!" onclick="msg();">disable hello</button>
+   </body>
+</html>

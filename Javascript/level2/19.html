@@ -1,0 +1,25 @@
+<!-- WAP to remove selected option from dropdown list.-->
+<!DOCTYPE html>
+<html>
+   <body>
+		
+		<script>
+			function deletea()
+			{
+				  var x = document.getElementById('1');
+				  x.remove(x.selectedIndex);
+			}			
+		</script>
+		
+		<select id="1">
+			<option>one</option>
+			<option>two</option>
+			<option>three</option>	
+			<option>four</option>
+			<option>five</option>
+			<option>six</option>
+		</select>	
+			<input type="button" value="delete" onclick="deletea()">
+			<p id='2'></p>
+   </body>
+</html>

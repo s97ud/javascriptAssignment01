@@ -1,0 +1,30 @@
+<!--  WAP to accept two integers and display the larger -->
+<!DOCTYPE html>
+<html>
+	<head>
+	<script>
+		function compare()
+		{
+		var a=parseFloat(document.getElementById('n1').value);
+		var b=parseFloat(document.getElementById('n2').value);
+		
+		if (a < b)
+			alert(b+" is larger");
+		else if (b < a)
+			alert(a+" is larger");
+		else 
+			alert("both are equal");
+		
+		}
+		
+	</script>
+	</head>
+	<body>
+
+	Enter 1st number: <input type="text" id="n1" placeholder="enter any number"><br/>
+	Enter 2nd number: <input type="text" id="n2" placeholder="enter any number"><br/>
+	
+	<button onclick="compare()">compare</button>
+	
+	</body>
+</html>

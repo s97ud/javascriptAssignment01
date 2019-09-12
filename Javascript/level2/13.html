@@ -1,0 +1,25 @@
+<!--  WAP to disable and enable the drop down list -->
+<!DOCTYPE html>
+<html>
+   <body>
+		
+		<script>
+			function enable()
+			{
+				  document.getElementById('1').disabled=false;
+			}
+			function disable()
+			{
+				  document.getElementById('1').disabled=true;
+			}		
+		</script>
+		
+		<select id="1">
+			<option>one</option>
+			<option>two</option>
+			<option>three</option>			
+		</select>	
+			<input type="button" value="disable" onclick="disable()">
+			<input type="button" value="enable" onclick="enable()">
+   </body>
+</html>
